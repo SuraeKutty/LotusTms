@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="10" total="18" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-12T14:56:57 IST" name="Default suite" finished-at="2022-09-12T15:00:00 IST" duration-ms="182878">
+    <groups>
+    </groups>
+    <test started-at="2022-09-12T14:56:57 IST" name="Default test" finished-at="2022-09-12T15:00:00 IST" duration-ms="182878">
+      <class name="com.lotustms.testcase.locationManagement_testCase">
+        <test-method is-config="true" signature="reportsInitialization()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:56:57 IST" name="reportsInitialization" finished-at="2022-09-12T14:56:57 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsInitialization -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:56:57 IST" name="CommonProperties" finished-at="2022-09-12T14:57:08 IST" duration-ms="10278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:08 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:57:25 IST" duration-ms="17505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:25 IST" name="screenShotAttacher" finished-at="2022-09-12T14:57:26 IST" duration-ms="899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:26 IST" name="CommonProperties" finished-at="2022-09-12T14:57:32 IST" duration-ms="6088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:32 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:57:48 IST" duration-ms="15996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:48 IST" name="screenShotAttacher" finished-at="2022-09-12T14:57:48 IST" duration-ms="321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:48 IST" name="CommonProperties" finished-at="2022-09-12T14:57:53 IST" duration-ms="4808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:57:53 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:58:09 IST" duration-ms="16256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:09 IST" name="screenShotAttacher" finished-at="2022-09-12T14:58:10 IST" duration-ms="310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:10 IST" name="CommonProperties" finished-at="2022-09-12T14:58:15 IST" duration-ms="5235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:15 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:58:31 IST" duration-ms="15904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:31 IST" name="screenShotAttacher" finished-at="2022-09-12T14:58:31 IST" duration-ms="326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:31 IST" name="CommonProperties" finished-at="2022-09-12T14:58:37 IST" duration-ms="5350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:37 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:58:53 IST" duration-ms="15921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:53 IST" name="screenShotAttacher" finished-at="2022-09-12T14:58:53 IST" duration-ms="293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:53 IST" name="CommonProperties" finished-at="2022-09-12T14:58:59 IST" duration-ms="6345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:58:59 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:59:15 IST" duration-ms="16046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:59:15 IST" name="screenShotAttacher" finished-at="2022-09-12T14:59:16 IST" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:59:16 IST" name="CommonProperties" finished-at="2022-09-12T14:59:21 IST" duration-ms="5258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:59:21 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T14:59:37 IST" duration-ms="15991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:59:37 IST" name="screenShotAttacher" finished-at="2022-09-12T14:59:37 IST" duration-ms="278" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=SUCCESS method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:59:37 IST" name="CommonProperties" finished-at="2022-09-12T14:59:44 IST" duration-ms="6833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T14:59:44 IST" name="Tc_Customer_009" description="Verify Location Management&gt;Location type&gt;Check if location type input is selected &amp; searched, results are showing as per the input - Location Management" finished-at="2022-09-12T15:00:00 IST" duration-ms="15899" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Chassis Depots] but found [abc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Chassis Depots] but found [abc]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.lotustms.testcase.locationManagement_testCase.Tc_Customer_009(locationManagement_testCase.java:255)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_Customer_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d]" started-at="2022-09-12T15:00:00 IST" name="screenShotAttacher" finished-at="2022-09-12T15:00:00 IST" duration-ms="383" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_Customer_009 status=FAILURE method=locationManagement_testCase.Tc_Customer_009()[pri:9, instance:com.lotustms.testcase.locationManagement_testCase@7e242b4d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+      </class> <!-- com.lotustms.testcase.locationManagement_testCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
