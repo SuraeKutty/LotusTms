@@ -53,9 +53,9 @@ public class BaseClass_lotusTms {
 	{
 	
 		WebDriverManager.chromedriver().setup();
-		ChromeOptions option = new ChromeOptions();
-		option.setHeadless(true);
-		driver = new ChromeDriver(option);
+//		ChromeOptions option = new ChromeOptions();
+//		option.setHeadless(true);
+		driver = new ChromeDriver();
 		
 		
 		driver.get("https://prodev.lotustms.com");
@@ -72,7 +72,7 @@ public class BaseClass_lotusTms {
 			log.pass("Test case Passed", MediaEntityBuilder.createScreenCaptureFromPath(ScreenShot.captureScreenshot(driver, result.getName())).build());
 		}
 		reports.flush();
-		driver.quit();
+//		driver.close();
 	}
 	
 	

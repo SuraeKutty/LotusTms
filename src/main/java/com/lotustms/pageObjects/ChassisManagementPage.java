@@ -18,6 +18,7 @@ public class ChassisManagementPage {
 		this.driver = ldriver;
 		PageFactory.initElements(driver, this);
 	}
+	
   @FindBy(xpath="//span[text()='Admin Features']/ancestor::a")
   WebElement adminFeature;
 	@FindBy(xpath="//a[@href='#/admin-features/chassis-management']")
@@ -62,10 +63,7 @@ public class ChassisManagementPage {
 	WebElement saveButton;
 	@FindBy(xpath="//mat-table/mat-row[1]/mat-cell[2]//span")
 	WebElement chassisNameSize;
-//	@FindBy(xpath="")
-//	WebElement emptyLegDelivery;
-//	@FindBy(xpath="")
-//	WebElement emptyLegDelivery;
+
 	
 	public void adminFeature() throws InterruptedException {
 		Thread.sleep(5000);

@@ -57,7 +57,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 		chassis.chassisnManagementModule();
 		logger.info("Clicked on chassis Management Module");
 		chassis.createNewButton();
-		logger.info("Clicked on create customer button ");
+		logger.info("Clicked on create  button ");
 		Thread.sleep(2000);
 		String expected = "Add Chassis";
 		assertEquals((chassis.verifySize()), expected);

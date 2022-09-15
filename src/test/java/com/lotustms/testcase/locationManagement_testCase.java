@@ -231,7 +231,7 @@ public class locationManagement_testCase extends BaseClass_lotusTms {
 		logger.info("Test Case is Passsed");
 	}
 	
-	@Test(priority=9,description="Verify Location Management>Location type>Check if location type input is selected & searched, results are showing as per the input - Location Management",invocationCount = 8)
+	@Test(priority=9,description="Verify Location Management>Location type>Check if location type input is selected & searched, results are showing as per the input - Location Management")
 	public void Tc_Customer_009() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Location Management>Location type>Check if location type input is selected & searched, results are showing as per the input - Location Management");
