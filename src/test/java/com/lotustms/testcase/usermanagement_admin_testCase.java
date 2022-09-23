@@ -13,13 +13,13 @@ import com.lotustms.base.BaseClass_lotusTms;
 import com.lotustms.pageObjects.LoginPage;
 import com.lotustms.pageObjects.UserManagement;
 
-public class usermanagement_admin_testCase extends BaseClass_lotusTms {
+ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	LoginPage login;
 	UserManagement user;
-	public static Logger logger = LogManager.getLogger(Login_test_case.class.getName());
+	public static Logger logger = LogManager.getLogger(usermanagement_admin_testCase.class.getName());
 
 	@Test(priority=1,description="Validate userManagement page")
-	public void Tc_Login_001() throws IOException, InterruptedException
+	public void Tc_UserManagement_001() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate userManagement page");
 		String validUname = ExcelFile("Login",1,0);
@@ -40,7 +40,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	
 
 	@Test(priority=2,description="Validate Create new user page")
-	public void Tc_Login_002() throws IOException, InterruptedException
+	public void Tc_UserManagement_002() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate Create new user page");
 		String validUname = ExcelFile("Login",1,0);
@@ -68,7 +68,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=3,description="Validate search field")
-	public void Tc_Login_003() throws IOException, InterruptedException
+	public void Tc_UserManagement_003() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate search field");
 		String validUname = ExcelFile("Login",1,0);
@@ -87,12 +87,12 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		user.search_userManagement(firstName);
 		logger.info("Entered value on search field");
 		String expected = "Automation";
-		assertEquals((user.verifyUserManagementPage()), expected);
+		assertEquals((user.verifySearch_userManagement()), expected);
 		logger.info("Test Case is Passsed");
 	}
 	
 	@Test(priority=4,description="Verify Create New-Verify(Admin Role) Success message is given once user is created")
-	public void Tc_Login_004() throws IOException, InterruptedException
+	public void Tc_UserManagement_004() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(Admin Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -129,7 +129,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=5,description="Verify Create New-Verify(Dispatch Role) Success message is given once user is created")
-	public void Tc_Login_005() throws IOException, InterruptedException
+	public void Tc_UserManagement_005() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(Dispatch Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -147,6 +147,11 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on usermanagement module");
 		user.createNewUserButton();
 		logger.info("Clicked on create new button");
+		user.cancelButton_userManagement();
+		logger.info("Clicked on cancel button");
+		Thread.sleep(2000);
+		user.createNewUserButton();
+		logger.info("Clicked on create new button");
 		user.firstName_userManagement(firstName);
 		logger.info("Entered text on first name");
 		user.lastName_userManagement(lastName);
@@ -160,13 +165,14 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on dispatch role");
 		user.sendActivationButton_userManagement();
 		logger.info("Clicked on send activation button");
+		Thread.sleep(500);
 		String expected = "User Created Successfully";
 		assertEquals((user.verifySuccuessfullMessageForCreatingUser()), expected);
 		logger.info("Test Case is Passsed");
 	}
 	
 	@Test(priority=6,description="Verify Create New-Verify(Driver Role) Success message is given once user is created")
-	public void Tc_Login_006() throws IOException, InterruptedException
+	public void Tc_UserManagement_006() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(Driver Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -182,6 +188,11 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on Admin Feature");
 		user.userManagement();
 		logger.info("Clicked on usermanagement module");
+		user.createNewUserButton();
+		logger.info("Clicked on create new button");
+		user.cancelButton_userManagement();
+		logger.info("Clicked on cancel button");
+		Thread.sleep(2000);
 		user.createNewUserButton();
 		logger.info("Clicked on create new button");
 		user.firstName_userManagement(firstName);
@@ -201,13 +212,14 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on driver type option role");
 		user.sendActivationButton_userManagement();
 		logger.info("Clicked on send activation button");
+		Thread.sleep(500);
 		String expected = "User Created Successfully";
 		assertEquals((user.verifySuccuessfullMessageForCreatingUser()), expected);
 		logger.info("Test Case is Passsed");
 	}
 	
 	@Test(priority=7,description="Verify Create New-Verify(driver pay Role) Success message is given once user is created")
-	public void Tc_Login_007() throws IOException, InterruptedException
+	public void Tc_UserManagement_007() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(driver pay Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -223,6 +235,11 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on Admin Feature");
 		user.userManagement();
 		logger.info("Clicked on usermanagement module");
+		user.createNewUserButton();
+		logger.info("Clicked on create new button");
+		user.cancelButton_userManagement();
+		logger.info("Clicked on cancel button");
+		Thread.sleep(2000);
 		user.createNewUserButton();
 		logger.info("Clicked on create new button");
 		user.firstName_userManagement(firstName);
@@ -238,13 +255,14 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on driver pay role");
 		user.sendActivationButton_userManagement();
 		logger.info("Clicked on send activation button");
+		Thread.sleep(500);
 		String expected = "User Created Successfully";
 		assertEquals((user.verifySuccuessfullMessageForCreatingUser()), expected);
 		logger.info("Test Case is Passsed");
 	}
 	
 	@Test(priority=8,description="Verify Create New-Verify(driver pay Role) Success message is given once user is created")
-	public void Tc_Login_008() throws IOException, InterruptedException
+	public void Tc_UserManagement_008() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(driver pay Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -262,6 +280,11 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on usermanagement module");
 		user.createNewUserButton();
 		logger.info("Clicked on create new button");
+		user.cancelButton_userManagement();
+		logger.info("Clicked on cancel button");
+		Thread.sleep(2000);
+		user.createNewUserButton();
+		logger.info("Clicked on create new button");
 		user.firstName_userManagement(firstName);
 		logger.info("Entered text on first name");
 		user.lastName_userManagement(lastName);
@@ -275,13 +298,14 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on invoice role");
 		user.sendActivationButton_userManagement();
 		logger.info("Clicked on send activation button");
+//		Thread.sleep(500);
 		String expected = "User Created Successfully";
 		assertEquals((user.verifySuccuessfullMessageForCreatingUser()), expected);
 		logger.info("Test Case is Passsed");
 	}
 	
 	@Test(priority=9,description="Verify Create New-Verify(Invoice Role) Success message is given once user is created")
-	public void Tc_Login_009() throws IOException, InterruptedException
+	public void Tc_UserManagement_009() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(Invoice Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -297,6 +321,11 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 		logger.info("Clicked on Admin Feature");
 		user.userManagement();
 		logger.info("Clicked on usermanagement module");
+		user.createNewUserButton();
+		logger.info("Clicked on create new button");
+		user.cancelButton_userManagement();
+		logger.info("Clicked on cancel button");
+		Thread.sleep(2000);
 		user.createNewUserButton();
 		logger.info("Clicked on create new button");
 		user.firstName_userManagement(firstName);
@@ -318,7 +347,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=10,description="Verify Create New-Verify(Order Entry Role) Success message is given once user is created")
-	public void Tc_Login_010() throws IOException, InterruptedException
+	public void Tc_UserManagement_010() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(Order Entry Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -355,7 +384,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=11,description="Validate Error message for first name")
-	public void Tc_Login_011() throws IOException, InterruptedException
+	public void Tc_UserManagement_011() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Create New-Verify(Order Entry Role) Success message is given once user is created");
 		String validUname = ExcelFile("Login",1,0);
@@ -392,7 +421,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=12,description="Validate Error message for last name")
-	public void Tc_Login_012() throws IOException, InterruptedException
+	public void Tc_UserManagement_012() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate Error message for last name");
 		String validUname = ExcelFile("Login",1,0);
@@ -429,7 +458,7 @@ public class usermanagement_admin_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=13,description="Validate Error message for email")
-	public void Tc_Login_013() throws IOException, InterruptedException
+	public void Tc_UserManagement_013() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate Error message for email");
 		String validUname = ExcelFile("Login",1,0);

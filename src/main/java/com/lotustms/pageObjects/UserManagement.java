@@ -41,7 +41,7 @@ public class UserManagement {
    WebElement Role;
    @FindBy(xpath="//mat-option[1]")
    WebElement adminRole;
-   @FindBy(xpath="//mat-option[21]")
+   @FindBy(xpath="//mat-option[2]")
    WebElement dispatchRole;
    @FindBy(xpath="//mat-option[3]")
    WebElement driverRole;
@@ -114,6 +114,7 @@ public class UserManagement {
 	
 	public String verifySuccuessfullMessageForCreatingUser()
 	{
+		action.explicitWait(driver, verifySuccuessfullMessageForCreatingUser, 20);
 		String verifyErrorMsg = verifySuccuessfullMessageForCreatingUser.getText();
 		return verifyErrorMsg;
 	}
@@ -242,10 +243,10 @@ public class UserManagement {
 		return verifyErrorMsg;
 	}
 
-	public void cancelButton_userManagement()
+	public void cancelButton_userManagement() throws InterruptedException
 	{
-		action.explicitWait(driver, cancelButton, 20);
-		action.scrollByVisibilityOfElement(driver, cancelButton);
+		Thread.sleep(1000);
+		action.explicitWait(driver, cancelButton, 30);
 		action.click(driver, cancelButton);
 	}
 	

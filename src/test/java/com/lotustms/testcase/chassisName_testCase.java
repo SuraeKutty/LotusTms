@@ -18,10 +18,10 @@ import com.lotustms.pageObjects.LoginPage;
 public class chassisName_testCase extends BaseClass_lotusTms {
 	LoginPage login;
 	ChassisManagementPage chassis;
-	public static Logger logger = LogManager.getLogger(locationManagement_testCase.class.getName());
+	public static Logger logger = LogManager.getLogger(chassisName_testCase.class.getName());
 
 	@Test(priority=1,description="Validate Chassis Management Page - Chassis Management")
-	public void Tc_Customer_001() throws IOException, InterruptedException
+	public void Tc_Chassis_001() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate Chassis Management Page - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -42,7 +42,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=2,description="Validate Create Chassis page - Chassis Management")
-	public void Tc_Customer_002() throws IOException, InterruptedException
+	public void Tc_Chassis_002() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Validate Create Chassis page - - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -65,7 +65,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=3,description="Verify Chassis Management>Create New>Create button must be disabled until mandatory field is given - Chassis Management")
-	public void Tc_Customer_003() throws IOException, InterruptedException
+	public void Tc_Chassis_003() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>Create New>Create button must be disabled until mandatory field is given - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -92,7 +92,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=4,description="Verify Chassis Management>Create New>If address is selected in bing api, check if street,state,city,zipcode are autopopulated accordingly - Chassis Management")
-	public void Tc_Customer_004() throws IOException, InterruptedException
+	public void Tc_Chassis_004() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>Create New>If address is selected in bing api, check if street,state,city,zipcode are autopopulated accordingly- Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -112,13 +112,20 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 		chassis.option();
 		logger.info("Entered Text on location");
 		Thread.sleep(2000);
-		String expected = "mat-form-field-label ng-tns-c2-29 ng-star-inserted";
-		assertEquals((chassis.verifyTextFilledInStreet()), expected);
-		logger.info("Test Case is Passsed");
+		String expected = "ng-star-inserted";
+		if((chassis.verifyTextFilledInStreet()).contains(expected)) {
+			assertTrue(true);
+			logger.info("Test Case is Passsed");
+		}
+		
+		else {
+			assertTrue(false);
+			logger.info("Test Case is Failed");
+		}
 	}
 	
 	@Test(priority=5,description="Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management")
-	public void Tc_Customer_005() throws IOException, InterruptedException
+	public void Tc_Chassis_005() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -155,7 +162,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=6,description="Verify Chassis Management>create new>check if state (mandatory field) is removed, create button is disabled - Chassis Management")
-	public void Tc_Customer_006() throws IOException, InterruptedException
+	public void Tc_Chassis_006() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>create new>check if state (mandatory field) is removed, create button is disabled - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -198,7 +205,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=7,description="Verify Chassis Management>On click of ID, chassis company info must be visible - Chassis Management")
-	public void Tc_Customer_007() throws IOException, InterruptedException
+	public void Tc_Chassis_007() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>On click of ID, chassis company info must be visible - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -221,7 +228,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=8,description="Verify Chassis Management>Edit>On editing the details, it must be updated successfully - Chassis Management")
-	public void Tc_Customer_008() throws IOException, InterruptedException
+	public void Tc_Chassis_008() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>Edit>On editing the details, it must be updated successfully - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -249,7 +256,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=9,description="Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management")
-	public void Tc_Customer_009() throws IOException, InterruptedException
+	public void Tc_Chassis_009() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -273,7 +280,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=10,description="Verify Chassis Management>delete>on acceptance of confirmation message, entry must be deleted successfully - Chassis Management")
-	public void Tc_Customer_010() throws IOException, InterruptedException
+	public void Tc_Chassis_010() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>delete>on acceptance of confirmation message, entry must be deleted successfully - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -299,7 +306,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=11,description="Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management")
-	public void Tc_Customer_011() throws IOException, InterruptedException
+	public void Tc_Chassis_011() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);
@@ -323,7 +330,7 @@ public class chassisName_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=12,description="Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management")
-	public void Tc_Customer_012() throws IOException, InterruptedException
+	public void Tc_Chassis_012() throws IOException, InterruptedException
 	{
 		log = reports.createTest("Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management");
 		String validUname = ExcelFile("Login",1,0);

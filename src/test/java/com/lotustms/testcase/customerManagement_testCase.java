@@ -240,7 +240,7 @@ public class customerManagement_testCase extends BaseClass_lotusTms {
 		Thread.sleep(2000);
 		customer.deleteButtonToInactivate();
 		logger.info("Clicked on delete button");
-		Thread.sleep(1000);
+		Thread.sleep(300);
 		String expected = "Customer Deactivated Successfully";
 		assertEquals((customer.verifysuccessfulMessage()), expected);
 		logger.info("Test Case is Passsed");
@@ -267,7 +267,7 @@ public class customerManagement_testCase extends BaseClass_lotusTms {
 		Thread.sleep(2000);
 		customer.deleteButtonToActivate();
 		logger.info("Clicked on delete button");
-		Thread.sleep(2000);
+		Thread.sleep(300);
 		String expected = "Customer Activated Successfully";
 		assertEquals((customer.verifysuccessfulMessage()), expected);
 		logger.info("Test Case is Passsed");
@@ -299,7 +299,7 @@ public class customerManagement_testCase extends BaseClass_lotusTms {
 		logger.info("Entered Text on businessName");
 		customer.saveButton();
 		logger.info("Clicked on save button");
-//		Thread.sleep(1000);
+		Thread.sleep(300);
 		String expected = "Customer Updated Successfully";
 		assertEquals((customer.verifysuccessfulMessage()), expected);
 		logger.info("Test Case is Passsed");
@@ -572,7 +572,7 @@ public class customerManagement_testCase extends BaseClass_lotusTms {
 		logger.info("Entered text on rate");
 		customer.createCustomer_customerManagement();
 		logger.info("Clicked on create button");
-//		Thread.sleep(1000);
+		Thread.sleep(300);
 		String expected = "New Route Rate Created Successfully";
 		assertEquals((customer.verifysuccessfulMessage()), expected);
 		logger.info("Test Case is Passsed");

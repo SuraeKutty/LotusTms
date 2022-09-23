@@ -1,0 +1,3064 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Sep 19, 2022 11:52:15 AM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='79.012%'><span class='strong'>64</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='20.988%'>17</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>loginTest with validUsername & validpassword</span>
+						<span class='test-time'>Sep 19, 2022 11:52:20 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:52:20 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:52:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+809ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:52:27 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_001_09_19_2022_11_52_27.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_001_09_19_2022_11_52_27.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_001_09_19_2022_11_52_27.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>loginTest with InvalidUsername and valid password</span>
+						<span class='test-time'>Sep 19, 2022 11:52:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:52:33 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:52:39 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+187ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:52:39 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_002_09_19_2022_11_52_39.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_002_09_19_2022_11_52_39.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_002_09_19_2022_11_52_39.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>validate forgetPassword</span>
+						<span class='test-time'>Sep 19, 2022 11:52:44 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:52:44 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:52:51 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+673ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:52:51 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_003_09_19_2022_11_52_51.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_003_09_19_2022_11_52_51.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_003_09_19_2022_11_52_51.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>loginTest with valid username and  Invalidpassword</span>
+						<span class='test-time'>Sep 19, 2022 11:52:57 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:52:57 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:53:03 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+165ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:53:03 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_005_09_19_2022_11_53_03.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_005_09_19_2022_11_53_03.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_005_09_19_2022_11_53_03.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>validate forgetPassword screen</span>
+						<span class='test-time'>Sep 19, 2022 11:53:09 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:53:09 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:53:14 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+834ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:53:14 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_006_09_19_2022_11_53_14.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_006_09_19_2022_11_53_14.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_006_09_19_2022_11_53_14.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>validate Error message appears when enter invalid email</span>
+						<span class='test-time'>Sep 19, 2022 11:53:20 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:53:20 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:53:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 36s+262ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:53:56 AM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_007_09_19_2022_11_53_56.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_007_09_19_2022_11_53_56.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_007_09_19_2022_11_53_56.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate userManagement page</span>
+						<span class='test-time'>Sep 19, 2022 11:54:01 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:54:01 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:54:15 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+575ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:54:15 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_001_09_19_2022_11_54_15.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_001_09_19_2022_11_54_15.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_001_09_19_2022_11_54_15.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Create new user page</span>
+						<span class='test-time'>Sep 19, 2022 11:54:20 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:54:20 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:54:35 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+784ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:54:35 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_002_09_19_2022_11_54_35.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_002_09_19_2022_11_54_35.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_002_09_19_2022_11_54_35.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate search field</span>
+						<span class='test-time'>Sep 19, 2022 11:54:41 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:54:41 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:55:03 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+594ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:55:03 AM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_003_09_19_2022_11_55_03.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_003_09_19_2022_11_55_03.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_003_09_19_2022_11_55_03.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(Admin Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 11:55:08 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:55:08 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:56:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 15s+890ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:56:23 AM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_004_09_19_2022_11_56_23.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_004_09_19_2022_11_56_23.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_004_09_19_2022_11_56_23.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(Dispatch Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 11:56:29 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:56:29 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:57:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 16s+135ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:57:45 AM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_005_09_19_2022_11_57_45.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_005_09_19_2022_11_57_45.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_005_09_19_2022_11_57_45.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(Driver Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 11:57:50 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:57:50 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:59:06 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 15s+988ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:59:06 AM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_006_09_19_2022_11_59_06.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_006_09_19_2022_11_59_06.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_006_09_19_2022_11_59_06.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(driver pay Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 11:59:12 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:59:12 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:59:29 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+624ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:59:29 AM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_007_09_19_2022_11_59_29.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_007_09_19_2022_11_59_29.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_007_09_19_2022_11_59_29.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(driver pay Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 11:59:35 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:59:35 AM</span>
+	<span class='label end-time'>Sep 19, 2022 11:59:52 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+79ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>11:59:52 AM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_008_09_19_2022_11_59_52.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_008_09_19_2022_11_59_52.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_008_09_19_2022_11_59_52.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(Invoice Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 11:59:58 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 11:59:58 AM</span>
+	<span class='label end-time'>Sep 19, 2022 12:01:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 14s+567ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:01:12 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_009_09_19_2022_12_01_12.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_009_09_19_2022_12_01_12.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_009_09_19_2022_12_01_12.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(Order Entry Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 12:01:18 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:01:18 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:02:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 14s+679ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:02:32 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_010_09_19_2022_12_02_32.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_010_09_19_2022_12_02_32.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_010_09_19_2022_12_02_32.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Create New-Verify(Order Entry Role) Success message is given once user is created</span>
+						<span class='test-time'>Sep 19, 2022 12:02:37 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:02:37 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:03:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 14s+918ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:03:52 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_011_09_19_2022_12_03_52.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_011_09_19_2022_12_03_52.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_011_09_19_2022_12_03_52.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Error message for last name</span>
+						<span class='test-time'>Sep 19, 2022 12:03:58 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:03:58 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:05:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 14s+615ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:05:12 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_012_09_19_2022_12_05_12.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_012_09_19_2022_12_05_12.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_012_09_19_2022_12_05_12.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Error message for email</span>
+						<span class='test-time'>Sep 19, 2022 12:05:17 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:05:17 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:06:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 46s+173ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:06:03 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_013_09_19_2022_12_06_03.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_013_09_19_2022_12_06_03.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Login_013_09_19_2022_12_06_03.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate CustomerManagement page - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:06:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:06:08 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:06:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+698ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:06:21 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_001_09_19_2022_12_06_21.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_001_09_19_2022_12_06_21.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_001_09_19_2022_12_06_21.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Create Customer page - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:06:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:06:26 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:06:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+53ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:06:41 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_002_09_19_2022_12_06_41.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_002_09_19_2022_12_06_41.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_002_09_19_2022_12_06_41.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Create New>Create button must be disabled until Business Name & Email option is given - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:06:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:06:46 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:06:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+344ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:06:59 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_003_09_19_2022_12_06_59.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_003_09_19_2022_12_06_59.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_003_09_19_2022_12_06_59.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Create New>If all mandatory fields are given, customer must be created successfully. - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:07:04 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:07:04 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:07:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+360ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:07:24 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_004_09_19_2022_12_07_24.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_004_09_19_2022_12_07_24.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_004_09_19_2022_12_07_24.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Check if space char is given, null value is accepted in Business Name. - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:07:29 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:07:29 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:07:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+407ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:07:46 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_005_09_19_2022_12_07_46.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_005_09_19_2022_12_07_46.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_005_09_19_2022_12_07_46.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Create New>If user enter duplicate mail, check if proper error message is given. - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:07:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:07:51 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:08:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+865ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:08:10 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_006_09_19_2022_12_08_10.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_006_09_19_2022_12_08_10.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_006_09_19_2022_12_08_10.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Create New>Verify on click of cancel button, Add Customer screen closes. - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:08:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:08:16 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:08:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+361ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:08:31 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_007_09_19_2022_12_08_31.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_007_09_19_2022_12_08_31.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_007_09_19_2022_12_08_31.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>If inactivate option is clicked , active customer must be inactivated - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:08:35 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:08:35 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:09:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 46s+862ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:09:22 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_008_09_19_2022_12_09_22.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_008_09_19_2022_12_09_22.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_008_09_19_2022_12_09_22.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>If Activate option is clicked , active customer must be inactivated - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:09:27 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:09:27 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:10:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 46s+571ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:10:14 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_009_09_19_2022_12_10_14.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_009_09_19_2022_12_10_14.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_009_09_19_2022_12_10_14.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>If user edits customer details, user must be updated successfully with a success message - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:10:18 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:10:18 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:11:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+69ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:11:07 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_010_09_19_2022_12_11_07.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_010_09_19_2022_12_11_07.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_010_09_19_2022_12_11_07.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Check on click of ID, customer info screen pops up - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:11:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:11:11 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:11:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+502ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:11:27 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_011_09_19_2022_12_11_27.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_011_09_19_2022_12_11_27.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_011_09_19_2022_12_11_27.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>On click of Inactive icon, check confirmaion message pops up - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:11:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:11:32 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:11:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+290ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:11:49 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_012_09_19_2022_12_11_49.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_012_09_19_2022_12_11_49.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_012_09_19_2022_12_11_49.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>On click of Status(Active) dropdown at the search, check if it is searched as per the selected input - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:11:54 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:11:54 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:12:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+154ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:12:09 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_013_09_19_2022_12_12_09.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_013_09_19_2022_12_12_09.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_013_09_19_2022_12_12_09.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>On click of Status(InActive) dropdown at the search, check if it is searched as per the selected input - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:12:14 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:12:14 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:12:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+128ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:12:29 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_014_09_19_2022_12_12_29.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_014_09_19_2022_12_12_29.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_014_09_19_2022_12_12_29.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>On click of Business name,customer details page should open - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:12:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:12:34 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:12:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+483ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:12:51 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_015_09_19_2022_12_12_51.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_015_09_19_2022_12_12_51.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_015_09_19_2022_12_12_51.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Customer details page>Customer specific rates>Create New>Route rate screen must be opened - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:12:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:12:55 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:13:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+817ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:14 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_016_09_19_2022_12_13_14.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_016_09_19_2022_12_13_14.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_016_09_19_2022_12_13_14.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Management>Add Customer rates>Create button must be disabled until mandatory field is given - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:13:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:13:18 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:13:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+856ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:13:36 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_017_09_19_2022_12_13_36.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_017_09_19_2022_12_13_36.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_017_09_19_2022_12_13_36.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Specific rates>must be reflected in order creation if customer type, pickup & drop location are same - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:13:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:13:42 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:14:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+362ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:14:10 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_018_09_19_2022_12_14_10.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_018_09_19_2022_12_14_10.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_018_09_19_2022_12_14_10.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer Specific rates>must be reflected in order creation if customer type, pickup & drop location are same - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:14:15 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:14:15 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:14:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 40s+336ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>12:14:55 PM</td>
+				<td class='step-details'>
+						Test case failed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_019_09_19_2022_12_14_55.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_019_09_19_2022_12_14_55.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_019_09_19_2022_12_14_55.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Customer details>On click of upload , upload document fields must be popped up & user must be able to upload documents - Customer Management</span>
+						<span class='test-time'>Sep 19, 2022 12:15:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:15:01 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:15:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+448ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:19 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_020_09_19_2022_12_15_19.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_020_09_19_2022_12_15_19.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Customer_020_09_19_2022_12_15_19.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Location Management Page - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:15:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:15:24 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:15:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+536ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:37 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_001_09_19_2022_12_15_37.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_001_09_19_2022_12_15_37.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_001_09_19_2022_12_15_37.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Create Location page - - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:15:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:15:42 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:15:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+553ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:15:57 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_002_09_19_2022_12_15_57.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_002_09_19_2022_12_15_57.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_002_09_19_2022_12_15_57.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Create New>Create button must be disabled until mandatory field is given - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:16:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:16:02 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:16:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+516ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:16 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_003_09_19_2022_12_16_16.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_003_09_19_2022_12_16_16.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_003_09_19_2022_12_16_16.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Create New>Check if mandatory fields are entered,location can be created successfully- Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:16:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:16:21 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:16:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+696ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:16:44 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_004_09_19_2022_12_16_44.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_004_09_19_2022_12_16_44.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_004_09_19_2022_12_16_44.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Create New>Check if null value accepted in Location Name if space char is given- Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:16:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:16:50 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:17:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+751ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:11 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_005_09_19_2022_12_17_11.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_005_09_19_2022_12_17_11.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_005_09_19_2022_12_17_11.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Create New>If address is selected in bing api, check if street,state,city,zipcode are autopopulated accordingly- Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:17:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:17:16 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:17:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+340ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:17:40 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_006_09_19_2022_12_17_40.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_006_09_19_2022_12_17_40.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_006_09_19_2022_12_17_40.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Create New>On click of cancel button, pop up screen should be closed - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:17:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:17:46 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:18:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+273ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:00 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_007_09_19_2022_12_18_00.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_007_09_19_2022_12_18_00.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_007_09_19_2022_12_18_00.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>ID>On click of ID,location info is popped up - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:18:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:18:06 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:18:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+905ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:19 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_008_09_19_2022_12_18_19.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_008_09_19_2022_12_18_19.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_008_09_19_2022_12_18_19.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Location type>Check if location type input is selected & searched, results are showing as per the input - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:18:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:18:24 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:18:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+69ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:18:40 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_009_09_19_2022_12_18_40.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_009_09_19_2022_12_18_40.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_009_09_19_2022_12_18_40.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Reset>On click of reset after search, check if all the locations are displayed - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:18:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:18:45 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:19:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+990ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:09 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_010_09_19_2022_12_19_09.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_010_09_19_2022_12_19_09.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_010_09_19_2022_12_19_09.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Location Management>Items per page>Check if entries are displayed as per the selection - Location Management</span>
+						<span class='test-time'>Sep 19, 2022 12:19:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:19:14 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:19:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+988ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:34 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_011_09_19_2022_12_19_34.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_011_09_19_2022_12_19_34.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Location_011_09_19_2022_12_19_34.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='51'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Chassis Management Page - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:19:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:19:39 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:19:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+646ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:19:51 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_001_09_19_2022_12_19_51.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_001_09_19_2022_12_19_51.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_001_09_19_2022_12_19_51.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='52'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Create Chassis page - - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:19:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:19:56 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:20:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+444ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:20:10 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_002_09_19_2022_12_20_10.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_002_09_19_2022_12_20_10.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_002_09_19_2022_12_20_10.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>Create New>Create button must be disabled until mandatory field is given - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:20:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:20:15 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:20:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+426ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:20:28 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_003_09_19_2022_12_20_28.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_003_09_19_2022_12_20_28.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_003_09_19_2022_12_20_28.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='54'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>Create New>If address is selected in bing api, check if street,state,city,zipcode are autopopulated accordingly- Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:20:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:20:33 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:20:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+905ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:20:52 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_004_09_19_2022_12_20_52.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_004_09_19_2022_12_20_52.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_004_09_19_2022_12_20_52.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:20:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:20:58 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:21:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+172ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:21:19 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_005_09_19_2022_12_21_19.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_005_09_19_2022_12_21_19.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_005_09_19_2022_12_21_19.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='56'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>create new>check if state (mandatory field) is removed, create button is disabled - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:21:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:21:23 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:22:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 53s+303ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:22:17 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_006_09_19_2022_12_22_17.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_006_09_19_2022_12_22_17.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_006_09_19_2022_12_22_17.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='57'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>On click of ID, chassis company info must be visible - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:22:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:22:21 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:22:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+879ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:22:35 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_007_09_19_2022_12_22_35.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_007_09_19_2022_12_22_35.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_007_09_19_2022_12_22_35.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>Edit>On editing the details, it must be updated successfully - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:22:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:22:40 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:22:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+455ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:22:57 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_008_09_19_2022_12_22_57.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_008_09_19_2022_12_22_57.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_008_09_19_2022_12_22_57.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:23:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:23:04 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:23:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+54ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:23:18 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_009_09_19_2022_12_23_18.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_009_09_19_2022_12_23_18.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_009_09_19_2022_12_23_18.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>delete>on acceptance of confirmation message, entry must be deleted successfully - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:23:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:23:22 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:23:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+98ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:23:38 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_010_09_19_2022_12_23_38.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_010_09_19_2022_12_23_38.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_010_09_19_2022_12_23_38.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='61'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:23:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:23:45 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:23:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+807ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:23:59 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_011_09_19_2022_12_23_59.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_011_09_19_2022_12_23_59.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_011_09_19_2022_12_23_59.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management</span>
+						<span class='test-time'>Sep 19, 2022 12:24:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:24:04 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:24:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+481ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:24:29 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_012_09_19_2022_12_24_29.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_012_09_19_2022_12_24_29.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_Chassis_012_09_19_2022_12_24_29.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='63'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate container Owner Management Page - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:24:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:24:34 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:24:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+750ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:24:47 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_001_09_19_2022_12_24_47.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_001_09_19_2022_12_24_47.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_001_09_19_2022_12_24_47.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='64'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Create container page - - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:24:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:24:52 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:25:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+421ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:25:07 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_002_09_19_2022_12_25_07.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_002_09_19_2022_12_25_07.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_002_09_19_2022_12_25_07.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='65'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container Management>Create New>Create button must be disabled until mandatory field is given - Container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:25:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:25:12 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:25:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+502ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:25:25 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_003_09_19_2022_12_25_25.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_003_09_19_2022_12_25_25.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_003_09_19_2022_12_25_25.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='66'>
+					<div class='test-heading'>
+						<span class='test-name'>Validate Container owner>create new>container owner must be created if all mandatory fields are given - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:25:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:25:30 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:26:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+444ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:26:00 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_004_09_19_2022_12_26_00.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_004_09_19_2022_12_26_00.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_004_09_19_2022_12_26_00.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>create new>add location>user must be able to add the new location - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:26:05 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:26:05 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:26:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 38s+41ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:26:43 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_005_09_19_2022_12_26_43.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_005_09_19_2022_12_26_43.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_005_09_19_2022_12_26_43.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='68'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Create new>Check if we can add upto three mail id's in email field - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:26:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:26:48 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:27:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 18s+724ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:27:07 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_006_09_19_2022_12_27_07.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_006_09_19_2022_12_27_07.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_006_09_19_2022_12_27_07.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='69'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Create new>Check if add button in email works only after entering one proper email - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:27:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:27:12 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:27:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+447ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:27:27 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_007_09_19_2022_12_27_27.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_007_09_19_2022_12_27_27.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_007_09_19_2022_12_27_27.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='70'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Create new>check if email can be deleted  - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:27:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:27:32 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:28:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 47s+390ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:28:19 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_008_09_19_2022_12_28_19.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_008_09_19_2022_12_28_19.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_008_09_19_2022_12_28_19.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='71'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Create new>Check if delete icon is not given for single email - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:28:23 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:28:23 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:29:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+766ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:29:08 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_009_09_19_2022_12_29_08.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_009_09_19_2022_12_29_08.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_009_09_19_2022_12_29_08.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='72'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Create new>check if add button in empty/pickup location is enabled only after one proper entry is given - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:29:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:29:13 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:29:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+500ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:29:30 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_010_09_19_2022_12_29_30.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_010_09_19_2022_12_29_30.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_010_09_19_2022_12_29_30.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='73'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Create new>Check if delete option works in empty/pickup location - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:29:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:29:35 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:30:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 52s+270ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:30:27 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_011_09_19_2022_12_30_27.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_011_09_19_2022_12_30_27.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_011_09_19_2022_12_30_27.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='74'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Edit details>check If user is able to edit the details correctly - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:30:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:30:32 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:30:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+888ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:30:47 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_012_09_19_2022_12_30_47.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_012_09_19_2022_12_30_47.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_012_09_19_2022_12_30_47.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='75'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Edit details>Check if mandatory fields are left blank in edit, save button is disabled - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:30:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:30:52 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:31:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+238ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:31:06 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_013_09_19_2022_12_31_06.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_013_09_19_2022_12_31_06.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_013_09_19_2022_12_31_06.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='76'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Check if pCR popup shows on click - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:31:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:31:10 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:31:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+849ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:31:23 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_014_09_19_2022_12_31_23.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_014_09_19_2022_12_31_23.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_014_09_19_2022_12_31_23.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='77'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>Check if PCR details are updated in popup screen,after addtion of deletion of PCR - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:31:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:31:28 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:31:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+842ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:31:41 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_015_09_19_2022_12_31_41.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_015_09_19_2022_12_31_41.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_015_09_19_2022_12_31_41.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='78'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>ID>On click of ID,container info details must be popped up - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:31:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:31:46 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:32:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+943ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:32:00 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_016_09_19_2022_12_32_00.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_016_09_19_2022_12_32_00.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_016_09_19_2022_12_32_00.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='79'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>on click of delete>check If confirmation message pops up - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:32:05 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:32:05 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:32:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+41ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:32:18 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_017_09_19_2022_12_32_18.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_017_09_19_2022_12_32_18.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_017_09_19_2022_12_32_18.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='80'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Container owner>on click of delete>check If confirmation message pops up - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:32:22 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:32:22 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:32:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+634ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:32:36 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_018_09_19_2022_12_32_36.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_018_09_19_2022_12_32_36.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_018_09_19_2022_12_32_36.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='81'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Order management & edit order>create order>container owner field>check if container owner is selected, the respective PCR is displayed in the chassis field - container Management</span>
+						<span class='test-time'>Sep 19, 2022 12:32:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 19, 2022 12:32:40 PM</span>
+	<span class='label end-time'>Sep 19, 2022 12:32:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+402ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>12:32:56 PM</td>
+				<td class='step-details'>
+						Test case Passed
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_019_09_19_2022_12_32_56.png' src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_019_09_19_2022_12_32_56.png' data-src='D:\eclipse-workspace\LotusTMS\LotusTMS/Screenshots/Tc_ContainerOwnerManagement_019_09_19_2022_12_32_56.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>81</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 19, 2022 11:52:15 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 19, 2022 12:32:56 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 40m 41s+150ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 81,
+				passParent: 64,
+				failParent: 17,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 17,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "loginTest with validUsername & validpassword":6.809,"loginTest with InvalidUsername and valid password":6.187,"validate forgetPassword":6.673,"loginTest with valid username and  Invalidpassword":6.165,"validate forgetPassword screen":5.834,"validate Error message appears when enter invalid email":36.262,"Validate userManagement page":14.575,"Validate Create new user page":14.784,"Validate search field":22.594,"Verify Create New-Verify(Admin Role) Success message is given once user is created":75.89,"Verify Create New-Verify(Dispatch Role) Success message is given once user is created":76.135,"Verify Create New-Verify(Driver Role) Success message is given once user is created":75.988,"Verify Create New-Verify(driver pay Role) Success message is given once user is created":17.624,"Verify Create New-Verify(driver pay Role) Success message is given once user is created":17.079,"Verify Create New-Verify(Invoice Role) Success message is given once user is created":74.567,"Verify Create New-Verify(Order Entry Role) Success message is given once user is created":74.679,"Verify Create New-Verify(Order Entry Role) Success message is given once user is created":74.918,"Validate Error message for last name":74.615,"Validate Error message for email":46.173,"Validate CustomerManagement page - Customer Management":12.698,"Validate Create Customer page - Customer Management":15.053,"Verify Customer Management>Create New>Create button must be disabled until Business Name & Email option is given - Customer Management":13.344,"Verify Customer Management>Create New>If all mandatory fields are given, customer must be created successfully. - Customer Management":19.36,"Verify Customer Management>Check if space char is given, null value is accepted in Business Name. - Customer Management":17.407,"Verify Customer Management>Create New>If user enter duplicate mail, check if proper error message is given. - Customer Management":18.865,"Verify Customer Management>Create New>Verify on click of cancel button, Add Customer screen closes. - Customer Management":15.361,"Verify Customer Management>If inactivate option is clicked , active customer must be inactivated - Customer Management":46.862,"Verify Customer Management>If Activate option is clicked , active customer must be inactivated - Customer Management":46.571,"Verify Customer Management>If user edits customer details, user must be updated successfully with a success message - Customer Management":48.069,"Verify Customer Management>Check on click of ID, customer info screen pops up - Customer Management":16.502,"Verify Customer Management>On click of Inactive icon, check confirmaion message pops up - Customer Management":17.29,"Verify Customer Management>On click of Status(Active) dropdown at the search, check if it is searched as per the selected input - Customer Management":15.154,"Verify Customer Management>On click of Status(InActive) dropdown at the search, check if it is searched as per the selected input - Customer Management":15.128,"Verify Customer Management>On click of Business name,customer details page should open - Customer Management":16.483,"Verify Customer Management>Customer details page>Customer specific rates>Create New>Route rate screen must be opened - Customer Management":18.817,"Verify Customer Management>Add Customer rates>Create button must be disabled until mandatory field is given - Customer Management":17.856,"Verify Customer Specific rates>must be reflected in order creation if customer type, pickup & drop location are same - Customer Management":27.362,"Verify Customer Specific rates>must be reflected in order creation if customer type, pickup & drop location are same - Customer Management":40.336,"Verify Customer details>On click of upload , upload document fields must be popped up & user must be able to upload documents - Customer Management":18.448,"Validate Location Management Page - Location Management":12.536,"Validate Create Location page - - Location Management":14.553,"Verify Location Management>Create New>Create button must be disabled until mandatory field is given - Location Management":13.516,"Verify Location Management>Create New>Check if mandatory fields are entered,location can be created successfully- Location Management":23.696,"Verify Location Management>Create New>Check if null value accepted in Location Name if space char is given- Location Management":20.751,"Verify Location Management>Create New>If address is selected in bing api, check if street,state,city,zipcode are autopopulated accordingly- Location Management":23.34,"Verify Location Management>Create New>On click of cancel button, pop up screen should be closed - Location Management":14.273,"Verify Location Management>ID>On click of ID,location info is popped up - Location Management":12.905,"Verify Location Management>Location type>Check if location type input is selected & searched, results are showing as per the input - Location Management":16.069,"Verify Location Management>Reset>On click of reset after search, check if all the locations are displayed - Location Management":23.99,"Verify Location Management>Items per page>Check if entries are displayed as per the selection - Location Management":19.988,"Validate Chassis Management Page - Chassis Management":12.646,"Validate Create Chassis page - - Chassis Management":14.444,"Verify Chassis Management>Create New>Create button must be disabled until mandatory field is given - Chassis Management":13.426,"Verify Chassis Management>Create New>If address is selected in bing api, check if street,state,city,zipcode are autopopulated accordingly- Chassis Management":18.905,"Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management":21.172,"Verify Chassis Management>create new>check if state (mandatory field) is removed, create button is disabled - Chassis Management":53.303,"Verify Chassis Management>On click of ID, chassis company info must be visible - Chassis Management":13.879,"Verify Chassis Management>Edit>On editing the details, it must be updated successfully - Chassis Management":17.455,"Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management":14.054,"Verify Chassis Management>delete>on acceptance of confirmation message, entry must be deleted successfully - Chassis Management":16.098,"Verify Chassis Management>Edit>On click of edit>edit details screen must be popped up - Chassis Management":13.807,"Verify Chassis Management>If all the mandatory fields are given, chassis must be created successfully - Chassis Management":25.481,"Validate container Owner Management Page - container Management":12.75,"Validate Create container page - - container Management":14.421,"Verify Container Management>Create New>Create button must be disabled until mandatory field is given - Container Management":13.502,"Validate Container owner>create new>container owner must be created if all mandatory fields are given - container Management":29.444,"Verify Container owner>create new>add location>user must be able to add the new location - container Management":38.041,"Verify Container owner>Create new>Check if we can add upto three mail id's in email field - container Management":18.724,"Verify Container owner>Create new>Check if add button in email works only after entering one proper email - container Management":15.447,"Verify Container owner>Create new>check if email can be deleted  - container Management":47.39,"Verify Container owner>Create new>Check if delete icon is not given for single email - container Management":44.766,"Verify Container owner>Create new>check if add button in empty/pickup location is enabled only after one proper entry is given - container Management":17.5,"Verify Container owner>Create new>Check if delete option works in empty/pickup location - container Management":52.27,"Verify Container owner>Edit details>check If user is able to edit the details correctly - container Management":14.888,"Verify Container owner>Edit details>Check if mandatory fields are left blank in edit, save button is disabled - container Management":14.238,"Verify Container owner>Check if pCR popup shows on click - container Management":12.849,"Verify Container owner>Check if PCR details are updated in popup screen,after addtion of deletion of PCR - container Management":12.842,"Verify Container owner>ID>On click of ID,container info details must be popped up - container Management":13.943,"Verify Container owner>on click of delete>check If confirmation message pops up - container Management":13.041,"Verify Container owner>on click of delete>check If confirmation message pops up - container Management":13.634,"Verify Order management & edit order>create order>container owner field>check if container owner is selected, the respective PCR is displayed in the chassis field - container Management":15.402
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

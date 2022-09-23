@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.lotustms.testcase.containerOwnerManagement_testCase">
+      <class name="com.lotustms.testcase.MenuConfiguration_testCase">
         <methods>
+          <include name="Tc_Location_002"/>
           <include name="screenShotAttacher"/>
           <include name="CommonProperties"/>
           <include name="reportsInitialization"/>
-          <include name="Tc_ContainerOwnerManagement_001"/>
         </methods>
-      </class> <!-- com.lotustms.testcase.containerOwnerManagement_testCase -->
+      </class> <!-- com.lotustms.testcase.MenuConfiguration_testCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

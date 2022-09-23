@@ -51,12 +51,10 @@ public class BaseClass_lotusTms {
 	@BeforeMethod
 	public void CommonProperties()
 	{
-	
 		WebDriverManager.chromedriver().setup();
-//		ChromeOptions option = new ChromeOptions();
-//		option.setHeadless(true);
-		driver = new ChromeDriver();
-		
+		ChromeOptions option = new ChromeOptions();
+		option.setHeadless(true);
+		driver = new ChromeDriver(option);
 		
 		driver.get("https://prodev.lotustms.com");
 //		driver.manage().window().maximize();
@@ -72,12 +70,11 @@ public class BaseClass_lotusTms {
 			log.pass("Test case Passed", MediaEntityBuilder.createScreenCaptureFromPath(ScreenShot.captureScreenshot(driver, result.getName())).build());
 		}
 		reports.flush();
-//		driver.close();
+		driver.close();
 	}
 	
 	
-	public String ExcelFile(String getsheet, int getRow, int getCell) throws IOException 
-	{
+	public String ExcelFile(String getsheet, int getRow, int getCell) throws IOException {
 		FileInputStream file = new FileInputStream("D:\\eclipse-workspace\\LotusTMS\\LotusTMS\\MidcitiesInput.xlsx");
 		XSSFWorkbook Workboook = new XSSFWorkbook(file);
 		XSSFSheet sheet = Workboook.getSheet(getsheet);
@@ -86,8 +83,6 @@ public class BaseClass_lotusTms {
 		DataFormatter formatter = new DataFormatter();
 		String text = formatter.formatCellValue(cell);
 		return text;
-
-		
 	}
 	
 	public String randomestring()

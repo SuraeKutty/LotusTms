@@ -130,7 +130,7 @@ public class containerOwnerManagement_testCase extends BaseClass_lotusTms {
 		container.createcontainer();
 		logger.info("Clicked on createcontainer");
 		Thread.sleep(1000);
-		String expected = "Container Created Successfully";
+		String expected = "Container Created Successfully\"";
 		assertEquals((container.verifysuccessfulMessage()), expected);
 		logger.info("Test Case is Passsed");
 	}
@@ -436,4 +436,155 @@ public class containerOwnerManagement_testCase extends BaseClass_lotusTms {
 		}
 	}
 	
+	
+	@Test(priority=14,description="Verify Container owner>Check if pCR popup shows on click - container Management")
+	public void Tc_ContainerOwnerManagement_014() throws IOException, InterruptedException
+	{
+		log = reports.createTest("Verify Container owner>Check if pCR popup shows on click - container Management");
+		String validUname = ExcelFile("Login",1,0);
+		String validpwd = ExcelFile("Login",1,1);
+		logger.info("user is going to click on SignIn");
+		login = new LoginPage(driver);
+		container = new containerOwnerManagementPage(driver);
+		login.login_validCredentials(validUname, validpwd);
+		Thread.sleep(1500);
+		container.adminFeature();
+		logger.info("Clicked on Admin Feature");
+		container.containerManagementModule();
+		logger.info("Clicked on container Management Module");
+		container.more_horiz();
+		logger.info("Clicked on more_horiz button");
+		Thread.sleep(1000);
+		String expected = "Preferred Chassis Rental Info";
+		assertEquals((container.verifySize()), expected);
+		logger.info("Test Case is Passsed");
+	}
+	
+	
+	@Test(priority=15,description="Verify Container owner>Check if PCR details are updated in popup screen,after addtion of deletion of PCR - container Management")
+	public void Tc_ContainerOwnerManagement_015() throws IOException, InterruptedException
+	{
+		log = reports.createTest("Verify Container owner>Check if PCR details are updated in popup screen,after addtion of deletion of PCR - container Management");
+		String validUname = ExcelFile("Login",1,0);
+		String validpwd = ExcelFile("Login",1,1);
+		logger.info("user is going to click on SignIn");
+		login = new LoginPage(driver);
+		container = new containerOwnerManagementPage(driver);
+		login.login_validCredentials(validUname, validpwd);
+		Thread.sleep(1500);
+		container.adminFeature();
+		logger.info("Clicked on Admin Feature");
+		container.containerManagementModule();
+		logger.info("Clicked on container Management Module");
+		container.more_horiz();
+		logger.info("Clicked on more_horiz button");
+		if((container.verifysizeOf_more_horiz())>0) {
+			assertTrue(true);
+			logger.info("Test Case is Passsed");
+		
+		}
+		else {
+			assertTrue(false);
+			logger.info("Test Case is Failed");
+		}
+	}
+	
+	@Test(priority=16,description="Verify Container owner>ID>On click of ID,container info details must be popped up- container Management")
+	public void Tc_ContainerOwnerManagement_016() throws IOException, InterruptedException
+	{
+		log = reports.createTest("Verify Container owner>ID>On click of ID,container info details must be popped up - container Management");
+		String validUname = ExcelFile("Login",1,0);
+		String validpwd = ExcelFile("Login",1,1);
+		logger.info("user is going to click on SignIn");
+		login = new LoginPage(driver);
+		container = new containerOwnerManagementPage(driver);
+		login.login_validCredentials(validUname, validpwd);
+		Thread.sleep(1500);
+		container.adminFeature();
+		logger.info("Clicked on Admin Feature");
+		container.containerManagementModule();
+		logger.info("Clicked on container Management Module");
+		container.idNumber();
+		logger.info("Clicked on idNumber button");
+		Thread.sleep(1000);
+		String expected = "Container Info";
+		assertEquals((container.verifySize()), expected);
+		logger.info("Test Case is Passsed");
+	}
+	
+	@Test(priority=17,description="Verify Container owner>on click of delete>check If confirmation message pops up- container Management")
+	public void Tc_ContainerOwnerManagement_017() throws IOException, InterruptedException
+	{
+		log = reports.createTest("Verify Container owner>on click of delete>check If confirmation message pops up - container Management");
+		String validUname = ExcelFile("Login",1,0);
+		String validpwd = ExcelFile("Login",1,1);
+		logger.info("user is going to click on SignIn");
+		login = new LoginPage(driver);
+		container = new containerOwnerManagementPage(driver);
+		login.login_validCredentials(validUname, validpwd);
+		Thread.sleep(1500);
+		container.adminFeature();
+		logger.info("Clicked on Admin Feature");
+		container.containerManagementModule();
+		logger.info("Clicked on container Management Module");
+		container.close();
+		logger.info("Clicked on close button");
+		Thread.sleep(1000);
+		String expected = "Confirmation";
+		assertEquals((container.verifySize()), expected);
+		logger.info("Test Case is Passsed");
+	}
+	
+	@Test(priority=18,description="Verify Container owner>on click of delete>check If confirmation message pops up- container Management")
+	public void Tc_ContainerOwnerManagement_018() throws IOException, InterruptedException
+	{
+		log = reports.createTest("Verify Container owner>on click of delete>check If confirmation message pops up - container Management");
+		String validUname = ExcelFile("Login",1,0);
+		String validpwd = ExcelFile("Login",1,1);
+		logger.info("user is going to click on SignIn");
+		login = new LoginPage(driver);
+		container = new containerOwnerManagementPage(driver);
+		login.login_validCredentials(validUname, validpwd);
+		Thread.sleep(1500);
+		container.adminFeature();
+		logger.info("Clicked on Admin Feature");
+		container.containerManagementModule();
+		logger.info("Clicked on container Management Module");
+		container.close();
+		logger.info("Clicked on close button");
+		container.Delete();
+		logger.info("Clicked on Delete button");
+		Thread.sleep(500);
+		String expected = "Container Deleted Successfully";
+		assertEquals((container.verifysuccessfulMessage()), expected);
+		logger.info("Test Case is Passsed");
+	}
+	
+	@Test(priority=19,description="Verify Order management & edit order>create order>container owner field>check if container owner is selected, the respective PCR is displayed in the chassis field - container Management")
+	public void Tc_ContainerOwnerManagement_019() throws IOException, InterruptedException
+	{
+		log = reports.createTest("Verify Order management & edit order>create order>container owner field>check if container owner is selected, the respective PCR is displayed in the chassis field - container Management");
+		String validUname = ExcelFile("Login",1,0);
+		String validpwd = ExcelFile("Login",1,1);
+		String num = randomeNumber();
+		logger.info("user is going to click on SignIn");
+		login = new LoginPage(driver);
+		container = new containerOwnerManagementPage(driver);
+		login.login_validCredentials(validUname, validpwd);
+		Thread.sleep(1500);
+		container.adminFeature();
+		logger.info("Clicked on Admin Feature");
+		container.containerManagementModule();
+		logger.info("Clicked on container Management Module");
+		container.edit();
+		logger.info("Clicked on close button");
+		container.phoneNumber(num);
+		logger.info("Entered text on phone number");
+		container.saveButton();
+		logger.info("Clicked on save button");
+		Thread.sleep(1000);
+		String expected = "Container Updated Successfully";
+		assertEquals((container.verifysuccessfulMessage()), expected);
+		logger.info("Test Case is Passsed");
+	}
 }

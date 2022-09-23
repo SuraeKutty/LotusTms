@@ -61,7 +61,7 @@ public class LoginPage extends BaseClass_lotusTms {
     WebElement returnToLogin_button;
     @FindBy(how=How.XPATH, using ="//span[text()='VERIFY']/parent::button")
     WebElement verifyButtonOtpTextBox;
-    @FindBy(how=How.XPATH, using ="//span[text()='VERIFY']/parent::button")
+    @FindBy(how=How.XPATH, using ="//mat-card/form/div/small")
     WebElement verifyErrorMessaeForInvalidEmail;
 
     

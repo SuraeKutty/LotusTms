@@ -436,8 +436,7 @@ public class CustomerManagement {
 	
 	public void idNumberClick() throws InterruptedException
 	{
-		action.explicitWait(driver, idNumber, 10);
-		action.scrollByVisibilityOfElement(driver, idNumber);
+		Thread.sleep(2000);
 		action.click(driver, idNumber);
 	}
 	

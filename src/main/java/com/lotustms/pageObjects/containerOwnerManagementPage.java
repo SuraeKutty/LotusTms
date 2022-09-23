@@ -93,14 +93,17 @@ public class containerOwnerManagementPage {
 	WebElement saveButton;
 	@FindBy(xpath="(//mat-icon[text()='edit'])[1]")
 	WebElement editButton;
-//	@FindBy(xpath="")
-//	WebElement emptyLegDelivery;
-//	@FindBy(xpath="")
-//	WebElement emptyLegDelivery;
-//	@FindBy(xpath="")
-//	WebElement emptyLegDelivery;
-//	@FindBy(xpath="")
-//	WebElement emptyLegDelivery;
+	@FindBy(xpath="(//mat-icon[text()='more_horiz'])[2]")
+	WebElement more_horiz;
+	@FindBy(xpath="//mat-dialog-content/mat-list/mat-list-item[1]/div/div[2]")
+	WebElement sizeOf_more_horiz;
+	@FindBy(xpath="(//mat-icon[text()='close'])[1]")
+	WebElement close;
+	@FindBy(xpath="//span[text()=' Delete ']/parent::button")
+	WebElement Delete;
+	@FindBy(xpath="(//mat-icon[text()='edit'])[1]")
+	WebElement edit;
+
 	
 	public void adminFeature() throws InterruptedException {
 		Thread.sleep(5000);
@@ -357,5 +360,33 @@ public class containerOwnerManagementPage {
 		return verifysaveButtonSize.isEnabled();
 	}
 	
+	public void more_horiz() throws InterruptedException {
+		Thread.sleep(1000);
+		action.click(driver, more_horiz);
+	}
+	
+	
+	public int verifysizeOf_more_horiz() throws InterruptedException {
+		Thread.sleep(1000);
+		List size= driver.findElements(By.xpath("//mat-dialog-content/mat-list/mat-list-item[1]/div/div[2]"));
+		int verifysizeOf_more_horiz = size.size();
+		System.out.println(verifysizeOf_more_horiz);
+		return verifysizeOf_more_horiz;
+	}
+	
+	public void close() throws InterruptedException {
+		Thread.sleep(1000);
+		action.click(driver, close);
+	}
+	
+	public void Delete() throws InterruptedException {
+		Thread.sleep(1000);
+		action.click(driver, Delete);
+	}
+	
+	public void edit() throws InterruptedException {
+		Thread.sleep(1000);
+		action.click(driver, edit);
+	}
 	
 }

@@ -124,7 +124,7 @@ public class Login_test_case extends BaseClass_lotusTms {
 		logger.info("user is going to click on SignIn");
 		login = new LoginPage(driver);
 		login.login_validCredentials(validUname, validpwd);
-		Thread.sleep(5000);
+		Thread.sleep(500);
 		String expectedMessage = "Invalid Email Id or Password";
 		assertEquals((login.verifyErrorMessaeForInvalidEmail()), expectedMessage);
 		logger.info("Test Case is Passsed");
