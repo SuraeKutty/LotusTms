@@ -86,7 +86,7 @@ public class EquipmentManagement_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=4,description="Validate Create new>Equipment type>check if equipment list is displayed from menu config>equip type - Equipment Management")
-	public void Tc_EquipmentManagement_004() throws IOException, InterruptedException {
+	public void Tc_EquipmentManagement_004() throws Exception {
 		log = reports.createTest("Validate Create new>Equipment type>check if equipment list is displayed from menu config>equip type - Equipment Management");
 		String validUname = ExcelFile("Login",1,0);
 		String validpwd = ExcelFile("Login",1,1);
@@ -139,7 +139,7 @@ public class EquipmentManagement_testCase extends BaseClass_lotusTms {
 	}
 	
 	@Test(priority=5,description="Validate Create new>Equipment type>if equipment type is truck, check if an additional field Truck # is displayed - Equipment Management")
-	public void Tc_EquipmentManagement_005() throws IOException, InterruptedException {
+	public void Tc_EquipmentManagement_005() throws Exception {
 		log = reports.createTest("Validate Create new>Equipment type>if equipment type is truck, check if an additional field Truck # is displayed - Equipment Management");
 		String validUname = ExcelFile("Login",1,0);
 		String validpwd = ExcelFile("Login",1,1);

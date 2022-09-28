@@ -54,8 +54,8 @@ public class MenuManagementPage {
     WebElement successfulMessage;
 	@FindBy(xpath="(//mat-card-title//span)[1]")
 	WebElement menuManagementPageSize;
-//	@FindBy(xpath="")
-//	WebElement adminFeature1;
+	@FindBy(xpath="//span[text()='Create']/parent::button")
+	WebElement Create;
 //	@FindBy(xpath="")
 //	WebElement adminFeature1;
 //	@FindBy(xpath="")
@@ -63,75 +63,90 @@ public class MenuManagementPage {
 //	@FindBy(xpath="")
 	
 	public void adminFeature() throws InterruptedException {
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
+		action.explicitWait(driver, adminFeature, 20);
 		action.JSClick(driver, adminFeature);
 	}
 	
 	public void menuConfiguration() throws InterruptedException {
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
+		action.explicitWait(driver, menuConfiguration, 20);
 		action.JSClick(driver, menuConfiguration);
 	}
 	
 	public String verifyMenuManagementPageSize() {
 		String verifylocationManagementPageSize = menuManagementPageSize.getText();
 		return verifylocationManagementPageSize;
+		
 	}
 	
 	public void ConfigurableDropdownsInTheApp() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, ConfigurableDropdownsInTheApp, 20);
 		action.click(driver, ConfigurableDropdownsInTheApp);
 	}
 	
 	public void option1() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option1, 20);
 		action.click(driver, option1);
 	}
 	
 	public void option2() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option2, 20);
 		action.click(driver, option2);
 	}
 	
 	public void option3() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, menuConfiguration, 30);
 		action.click(driver, option3);
 	}
 	public void option4() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option4, 20);
 		action.click(driver, option4);
 	}
 	
 	public void option5() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option5, 20);
 		action.click(driver, option5);
 	}
 	
 	public void option6() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option6, 20);
 		action.click(driver, option6);
 	}
 	public void option7() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option7, 20);
 		action.click(driver, option7);
 	}
 	
 	public void option8() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option8, 20);
 		action.click(driver, option8);
 	}
 	
 	public void option9() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option9, 20);
 		action.click(driver, option9);
 	}
 	
 	public void option10() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, option10, 20);
 		action.click(driver, option10);
 	}
 	
 	public void resetButton() throws InterruptedException {
-		Thread.sleep(500);
+//		Thread.sleep(500);
+		action.explicitWait(driver, resetButton, 20);
 		action.click(driver, resetButton);
 	}
 	
@@ -146,8 +161,15 @@ public class MenuManagementPage {
 	}
 	
 	public void addField(String name) throws InterruptedException {
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
+		action.explicitWait(driver, addField, 20);
 		action.type(addField, name);
+	}
+	
+	public void Create() throws InterruptedException {
+//		Thread.sleep(500);
+		action.explicitWait(driver, Create, 20);
+		action.click(driver, Create);
 	}
 	
 	

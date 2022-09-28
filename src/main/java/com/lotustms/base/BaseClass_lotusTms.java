@@ -70,7 +70,7 @@ public class BaseClass_lotusTms {
 			log.pass("Test case Passed", MediaEntityBuilder.createScreenCaptureFromPath(ScreenShot.captureScreenshot(driver, result.getName())).build());
 		}
 		reports.flush();
-		driver.close();
+//		driver.close();
 	}
 	
 	

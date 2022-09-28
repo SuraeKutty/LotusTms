@@ -138,7 +138,7 @@ public class EquipmentManagementPage {
 	}
 	
 	
-	public void equipment_type_id() throws InterruptedException {
+	public void equipment_type_id() throws Exception   {
 		Thread.sleep(1000);
 		action.click(driver, equipment_type_id);
 	}

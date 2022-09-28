@@ -1,109 +1,378 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T18:02:43 IST" name="Default suite" finished-at="2022-09-22T18:03:39 IST" duration-ms="55995">
+  <suite started-at="2022-09-27T16:42:36 IST" name="Default suite" finished-at="2022-09-27T16:59:01 IST" duration-ms="984599">
     <groups>
     </groups>
-    <test started-at="2022-09-22T18:02:43 IST" name="Default test" finished-at="2022-09-22T18:03:39 IST" duration-ms="55995">
-      <class name="com.lotustms.testcase.MenuConfiguration_testCase">
-        <test-method is-config="true" signature="reportsInitialization()[pri:0, instance:com.lotustms.testcase.MenuConfiguration_testCase@61526469]" started-at="2022-09-22T18:02:43 IST" name="reportsInitialization" finished-at="2022-09-22T18:02:43 IST" duration-ms="199" status="PASS">
+    <test started-at="2022-09-27T16:42:36 IST" name="Default test" finished-at="2022-09-27T16:59:01 IST" duration-ms="984599">
+      <class name="com.lotustms.testcase.containerOwnerManagement_testCase">
+        <test-method is-config="true" signature="reportsInitialization()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:42:35 IST" name="reportsInitialization" finished-at="2022-09-27T16:42:36 IST" duration-ms="777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsInitialization -->
-        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.MenuConfiguration_testCase@61526469]" started-at="2022-09-22T18:02:43 IST" name="CommonProperties" finished-at="2022-09-22T18:02:51 IST" duration-ms="8436" status="PASS">
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:42:36 IST" name="CommonProperties" finished-at="2022-09-27T16:42:59 IST" duration-ms="22726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CommonProperties -->
-        <test-method signature="Tc_Location_002()[pri:2, instance:com.lotustms.testcase.MenuConfiguration_testCase@61526469]" started-at="2022-09-22T18:02:51 IST" name="Tc_Location_002" description="Validate Menu config&gt;Check if location type can be added &amp; deleted successfully - Menu Configuration" finished-at="2022-09-22T18:03:38 IST" duration-ms="46821" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//simple-snack-bar/span"}
-  (Session info: headless chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MG03N7G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 735620fbfffaaeb74fddcc7d5970530b
-*** Element info: {Using=xpath, value=//simple-snack-bar/span}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//simple-snack-bar/span"}
-  (Session info: headless chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MG03N7G', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 735620fbfffaaeb74fddcc7d5970530b
-*** Element info: {Using=xpath, value=//simple-snack-bar/span}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.getText(Unknown Source)
-at com.lotustms.pageObjects.MenuManagementPage.verifysuccessfulMessage(MenuManagementPage.java:144)
-at com.lotustms.testcase.MenuConfiguration_testCase.Tc_Location_002(MenuConfiguration_testCase.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="Tc_ContainerOwnerManagement_001()[pri:1, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:42:59 IST" name="Tc_ContainerOwnerManagement_001" description="Validate container Owner Management Page - container Management" finished-at="2022-09-27T16:43:29 IST" duration-ms="29941" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Tc_Location_002 -->
-        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.MenuConfiguration_testCase@61526469]" started-at="2022-09-22T18:03:38 IST" name="screenShotAttacher" finished-at="2022-09-22T18:03:39 IST" duration-ms="681" status="PASS">
+        </test-method> <!-- Tc_ContainerOwnerManagement_001 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:43:29 IST" name="screenShotAttacher" finished-at="2022-09-27T16:43:33 IST" duration-ms="4248" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Tc_Location_002 status=FAILURE method=MenuConfiguration_testCase.Tc_Location_002()[pri:2, instance:com.lotustms.testcase.MenuConfiguration_testCase@61526469] output={null}]]]>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_001 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_001()[pri:1, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShotAttacher -->
-      </class> <!-- com.lotustms.testcase.MenuConfiguration_testCase -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:43:33 IST" name="CommonProperties" finished-at="2022-09-27T16:44:01 IST" duration-ms="27714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_002()[pri:2, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:44:01 IST" name="Tc_ContainerOwnerManagement_002" description="Validate Create container page - container Management" finished-at="2022-09-27T16:44:36 IST" duration-ms="35385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_002 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:44:36 IST" name="screenShotAttacher" finished-at="2022-09-27T16:44:38 IST" duration-ms="2100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_002 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_002()[pri:2, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:44:38 IST" name="CommonProperties" finished-at="2022-09-27T16:45:14 IST" duration-ms="35228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_003()[pri:3, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:45:14 IST" name="Tc_ContainerOwnerManagement_003" description="Verify Container Management&gt;Create New&gt;Create button must be disabled until mandatory field is given - Container Management" finished-at="2022-09-27T16:45:41 IST" duration-ms="26985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_003 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:45:41 IST" name="screenShotAttacher" finished-at="2022-09-27T16:45:42 IST" duration-ms="1971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_003 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_003()[pri:3, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:45:43 IST" name="CommonProperties" finished-at="2022-09-27T16:46:10 IST" duration-ms="27265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_004()[pri:4, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:46:10 IST" name="Tc_ContainerOwnerManagement_004" description="Validate Container owner&gt;create new&gt;container owner must be created if all mandatory fields are given - container Management" finished-at="2022-09-27T16:47:01 IST" duration-ms="51647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_004 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:47:01 IST" name="screenShotAttacher" finished-at="2022-09-27T16:47:04 IST" duration-ms="2367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_004 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_004()[pri:4, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:47:04 IST" name="CommonProperties" finished-at="2022-09-27T16:47:29 IST" duration-ms="25018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_005()[pri:5, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:47:29 IST" name="Tc_ContainerOwnerManagement_005" description="Verify Container owner&gt;create new&gt;add location&gt;user must be able to add the new location - container Management" finished-at="2022-09-27T16:48:14 IST" duration-ms="45333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_005 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:48:14 IST" name="screenShotAttacher" finished-at="2022-09-27T16:48:16 IST" duration-ms="1594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_005 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_005()[pri:5, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:48:16 IST" name="CommonProperties" finished-at="2022-09-27T16:49:06 IST" duration-ms="50218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_006()[pri:6, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:49:06 IST" name="Tc_ContainerOwnerManagement_006" description="Verify Container owner&gt;Create new&gt;Check if we can add upto three mail id&#039;s in email field - container Management" finished-at="2022-09-27T16:49:33 IST" duration-ms="27385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_006 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:49:33 IST" name="screenShotAttacher" finished-at="2022-09-27T16:49:35 IST" duration-ms="1251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_006 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_006()[pri:6, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:49:35 IST" name="CommonProperties" finished-at="2022-09-27T16:49:49 IST" duration-ms="14731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_007()[pri:7, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:49:49 IST" name="Tc_ContainerOwnerManagement_007" description="Verify Container owner&gt;Create new&gt;Check if add button in email works only after entering one proper email - container Management" finished-at="2022-09-27T16:50:09 IST" duration-ms="19887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_007 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:50:09 IST" name="screenShotAttacher" finished-at="2022-09-27T16:50:10 IST" duration-ms="1028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_007 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_007()[pri:7, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:50:10 IST" name="CommonProperties" finished-at="2022-09-27T16:50:20 IST" duration-ms="9527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_008()[pri:8, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:50:20 IST" name="Tc_ContainerOwnerManagement_008" description="Verify Container owner&gt;Create new&gt;check if email can be deleted  - container Management" finished-at="2022-09-27T16:51:11 IST" duration-ms="51248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_008 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:51:11 IST" name="screenShotAttacher" finished-at="2022-09-27T16:51:12 IST" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_008 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_008()[pri:8, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:51:12 IST" name="CommonProperties" finished-at="2022-09-27T16:51:32 IST" duration-ms="20313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_009()[pri:9, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:51:32 IST" name="Tc_ContainerOwnerManagement_009" description="Verify Container owner&gt;Create new&gt;Check if delete icon is not given for single email - container Management" finished-at="2022-09-27T16:52:24 IST" duration-ms="51716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_009 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:52:24 IST" name="screenShotAttacher" finished-at="2022-09-27T16:52:25 IST" duration-ms="1018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_009 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_009()[pri:9, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:52:25 IST" name="CommonProperties" finished-at="2022-09-27T16:52:37 IST" duration-ms="12121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_010()[pri:10, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:52:37 IST" name="Tc_ContainerOwnerManagement_010" description="Verify Container owner&gt;Create new&gt;check if add button in empty/pickup location is enabled only after one proper entry is given - container Management" finished-at="2022-09-27T16:53:03 IST" duration-ms="26073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_010 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:53:03 IST" name="screenShotAttacher" finished-at="2022-09-27T16:53:05 IST" duration-ms="1316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_010 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_010()[pri:10, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:53:05 IST" name="CommonProperties" finished-at="2022-09-27T16:53:20 IST" duration-ms="15395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_011()[pri:11, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:53:20 IST" name="Tc_ContainerOwnerManagement_011" description="Verify Container owner&gt;Create new&gt;Check if delete option works in empty/pickup location - container Management" finished-at="2022-09-27T16:54:16 IST" duration-ms="56447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_011 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:54:16 IST" name="screenShotAttacher" finished-at="2022-09-27T16:54:18 IST" duration-ms="1070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_011 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_011()[pri:11, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:54:18 IST" name="CommonProperties" finished-at="2022-09-27T16:54:33 IST" duration-ms="15032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_012()[pri:12, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:54:33 IST" name="Tc_ContainerOwnerManagement_012" description="Verify Container owner&gt;Edit details&gt;check If user is able to edit the details correctly - container Management" finished-at="2022-09-27T16:54:51 IST" duration-ms="18219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_012 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:54:51 IST" name="screenShotAttacher" finished-at="2022-09-27T16:54:52 IST" duration-ms="1074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_012 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_012()[pri:12, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:54:52 IST" name="CommonProperties" finished-at="2022-09-27T16:55:07 IST" duration-ms="15295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_013()[pri:13, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:55:07 IST" name="Tc_ContainerOwnerManagement_013" description="Verify Container owner&gt;Edit details&gt;Check if mandatory fields are left blank in edit, save button is disabled - container Management" finished-at="2022-09-27T16:55:24 IST" duration-ms="17046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_013 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:55:24 IST" name="screenShotAttacher" finished-at="2022-09-27T16:55:25 IST" duration-ms="1113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_013 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_013()[pri:13, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:55:25 IST" name="CommonProperties" finished-at="2022-09-27T16:55:54 IST" duration-ms="28357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_014()[pri:14, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:55:54 IST" name="Tc_ContainerOwnerManagement_014" description="Verify Container owner&gt;Check if pCR popup shows on click - container Management" finished-at="2022-09-27T16:56:10 IST" duration-ms="16280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_014 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:56:10 IST" name="screenShotAttacher" finished-at="2022-09-27T16:56:11 IST" duration-ms="1024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_014 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_014()[pri:14, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:56:11 IST" name="CommonProperties" finished-at="2022-09-27T16:56:24 IST" duration-ms="12554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_015()[pri:15, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:56:24 IST" name="Tc_ContainerOwnerManagement_015" description="Verify Container owner&gt;Check if PCR details are updated in popup screen,after addtion of deletion of PCR - container Management" finished-at="2022-09-27T16:56:40 IST" duration-ms="15980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_015 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:56:40 IST" name="screenShotAttacher" finished-at="2022-09-27T16:56:41 IST" duration-ms="1100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_015 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_015()[pri:15, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:56:41 IST" name="CommonProperties" finished-at="2022-09-27T16:56:55 IST" duration-ms="14614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_016()[pri:16, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:56:55 IST" name="Tc_ContainerOwnerManagement_016" description="Verify Container owner&gt;ID&gt;On click of ID,container info details must be popped up- container Management" finished-at="2022-09-27T16:57:12 IST" duration-ms="17091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_016 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:57:12 IST" name="screenShotAttacher" finished-at="2022-09-27T16:57:14 IST" duration-ms="1687" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_016 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_016()[pri:16, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:57:14 IST" name="CommonProperties" finished-at="2022-09-27T16:57:34 IST" duration-ms="19659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_017()[pri:17, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:57:34 IST" name="Tc_ContainerOwnerManagement_017" description="Verify Container owner&gt;on click of delete&gt;check If confirmation message pops up- container Management" finished-at="2022-09-27T16:57:49 IST" duration-ms="15596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_017 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:57:49 IST" name="screenShotAttacher" finished-at="2022-09-27T16:57:50 IST" duration-ms="1008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_017 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_017()[pri:17, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:57:50 IST" name="CommonProperties" finished-at="2022-09-27T16:58:01 IST" duration-ms="11144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_018()[pri:18, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:58:01 IST" name="Tc_ContainerOwnerManagement_018" description="Verify Container owner&gt;on click of delete&gt;check If confirmation message pops up- container Management" finished-at="2022-09-27T16:58:18 IST" duration-ms="16862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_018 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:58:18 IST" name="screenShotAttacher" finished-at="2022-09-27T16:58:20 IST" duration-ms="1846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_018 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_018()[pri:18, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+        <test-method is-config="true" signature="CommonProperties()[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:58:20 IST" name="CommonProperties" finished-at="2022-09-27T16:58:38 IST" duration-ms="18180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CommonProperties -->
+        <test-method signature="Tc_ContainerOwnerManagement_019()[pri:19, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:58:38 IST" name="Tc_ContainerOwnerManagement_019" description="Verify Order management &amp; edit order&gt;create order&gt;container owner field&gt;check if container owner is selected, the respective PCR is displayed in the chassis field - container Management" finished-at="2022-09-27T16:58:58 IST" duration-ms="19801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_ContainerOwnerManagement_019 -->
+        <test-method is-config="true" signature="screenShotAttacher(org.testng.ITestResult)[pri:0, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011]" started-at="2022-09-27T16:58:58 IST" name="screenShotAttacher" finished-at="2022-09-27T16:59:00 IST" duration-ms="2223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Tc_ContainerOwnerManagement_019 status=SUCCESS method=containerOwnerManagement_testCase.Tc_ContainerOwnerManagement_019()[pri:19, instance:com.lotustms.testcase.containerOwnerManagement_testCase@68759011] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShotAttacher -->
+      </class> <!-- com.lotustms.testcase.containerOwnerManagement_testCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
